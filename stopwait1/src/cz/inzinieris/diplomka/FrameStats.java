@@ -15,7 +15,7 @@ public class FrameStats {
 	private int attemptDitrib;
 	
 	//konstruktor triedy
-	public FrameStats(int sumNumber,int distribLength){
+	public FrameStats(int sumNumber){
 		sumFrameNumber = sumNumber; //nastavi cislo ramca
 		sumReceived = 0; //pocet prijatych ramcov je 0
 		corruptedReceived = 0;//pocet poskodenych ramcov je 0
@@ -23,9 +23,9 @@ public class FrameStats {
 		attemptCounter = 0; //ppcet pokusov je 0
 		attemptDistrib = new int[sumFrameNumber]; //distibucia ma pole nastaveny na poct indexov poctu ramcov
 		attemptDistribIndex = -1; //primarny index je -1 nastaveny
-		attemptDitrib2 = new int[distribLength];
+		attemptDitrib2 = new int[distribLen];
 		
-		for (int i = 0; i < distribLength; i++) { //cyklus vybuluje distibuciu ramcov 
+		for (int i = 0; i < distribLen; i++) { //cyklus vybuluje distibuciu ramcov 
 			attemptDitrib2[i] = 0;
 		}
 	}
