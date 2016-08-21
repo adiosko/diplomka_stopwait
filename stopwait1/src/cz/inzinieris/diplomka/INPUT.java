@@ -17,6 +17,12 @@ public class INPUT {
 	private int sumOfFrames; //pocet ramcov k spracovaniu
 	
 	
+	public int getDistribLenngth() {
+		return distribLenngth;
+	}
+	public void setDistribLenngth(int distribLenngth) {
+		this.distribLenngth = distribLenngth;
+	}
 	//vzgenerovanie geterov a seterov
 	public double getBitRate() {
 		return bitRate;

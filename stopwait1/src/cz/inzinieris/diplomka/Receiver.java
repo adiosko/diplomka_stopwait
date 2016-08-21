@@ -9,10 +9,10 @@ public class Receiver {
 	private int lastReceivedNumber;
 	
 	//konstruktor
-	public Receiver(int sumFrameNumber,int procTime,int acLength){
+	public Receiver(int sumFrameNumber,double d,int acLength){
 		expectedFrameNumber = 0;
 		lastReceivedFrameNumber = 1;
-		processedTime = procTime;
+		processedTime = (int) d;
 		ackFrameLength = acLength;
 		statistics = new FrameStats(sumFrameNumber);
 	}

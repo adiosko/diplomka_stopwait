@@ -15,9 +15,9 @@ public class Sender {
 	private FrameStats statistics; //stats ramca
 	
 	//konstruktor triedy Sender
-	public Sender(int sumNumber, boolean timeOut, int ackLength, int infoLength, int infoDistrib){
+	public Sender(int sumNumber, double d, int ackLength, int infoLength, int infoDistrib){
 		currentFrameNumber = 1;
-		timedOut = timeOut;
+		timedOut = false;
 		infoFrameLength = infoLength;
 		ackFrameLength = ackLength;
 		lengthDistribution = infoDistrib;
