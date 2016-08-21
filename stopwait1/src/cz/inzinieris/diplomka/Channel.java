@@ -1,5 +1,5 @@
 package cz.inzinieris.diplomka;
-//git repo added
+//git repo addednew
 public class Channel {
 	//dekla\racia premmennych pre kanal
 	private double bitErrorProbability;
